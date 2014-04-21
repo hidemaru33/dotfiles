@@ -1,0 +1,57 @@
+# Make sure using latest Homebrew
+update
+
+# Update already-installed formula
+upgrade
+
+# Add Repository
+# tap homebrew/versions
+# tap homebrew/binary
+
+# For cask
+tap phinze/homebrew-cask
+install brew-cask
+
+# Formula
+install zsh --disable-etcdir
+install git
+install tmux
+#install reattach-to-user-namespace
+#install ricty
+install coreutils
+
+# .dmg apps
+cask install alfred
+cask alfred link
+cask install appcleaner
+cask install caffeine
+cask install xtrafinder
+cask install google-chrome
+cask install google-japanese-ime
+cask install iterm2
+cask install kobito
+#cask uninstall sublime-text
+cask install dropbox
+cask install evernote
+cask install skype
+cask install hipchat
+cask install skitch
+cask install sourcetree
+cask install clipmenu
+#cask install dash
+#cask install coteditor
+#cask install github
+#cask install sequel-pro
+#cask install vagrant
+#cask install virtualbox
+
+# betaのやつをいれるにはここを使う
+tap caskroom/homebrew-versions
+cask install sublime-text3
+
+# rictyのインストール
+#tap sanemat/font
+#install ricty
+
+# Remove outdated versions
+cleanup
